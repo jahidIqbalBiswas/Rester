@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#mainMenu').hcOffcanvasNav({
-        disableAt: 961,
+        disableAt: 961
     });
 });
 // desktop right sidebar

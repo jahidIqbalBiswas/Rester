@@ -1,11 +1,13 @@
-@use "fonts" as util;
+@use "fonts" as fonts;
+@use "./colors" as colors;
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: util.$openSans;
+    font-family: fonts.$openSans !important;
+    background-color: colors.$bgColor;
 }
 img{
     width: 100%;
