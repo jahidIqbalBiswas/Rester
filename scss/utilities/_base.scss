@@ -1,0 +1,17 @@
+@use "fonts" as util;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: util.$openSans;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
