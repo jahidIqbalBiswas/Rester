@@ -1,0 +1,57 @@
+@use "../utilities/index" as util;
+.food-banner-section{
+    margin-top: 20px;
+    padding-bottom: 100px;
+    .banner-wrapper{
+        position: relative;
+        padding: 80px 30px;
+        background-size: cover !important;
+        background-position: center !important;
+        color: util.$primaryColor;
+        font-family: util.$primaryFont;
+        &.left-banner{
+            background: url("../../images/food-banner/left-banner.jpg");
+        }
+        &.right-banner{
+            background: url("../../images/food-banner/right-banner.jpg");
+        }
+        h1{
+            color: util.$white;
+        }
+        .theme-btn{
+            margin-top: 20px;
+        }
+        .price-box{
+            position: absolute;
+            right: 38px;
+            top: 25px;
+            img{
+                max-width: 100px;
+                width: 100%;
+            }
+            .text-content{
+                position: absolute;
+                top: 33px;
+                left: 30px;
+                span{
+                    display: block;
+                    line-height: 1.2;
+                    text-align: center;
+                    &:first-child{
+                        font-size: 17px;
+                        color: util.$white;
+                        font-family: util.$openSans;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    &:last-child{
+                        font-size: 24px;
+                        color: util.$primaryColor;
+                        font-family: util.$primaryFont;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

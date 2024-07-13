@@ -16,6 +16,10 @@
 }
 .header-wrapper{
     background: util.$secondaryColor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
 .main-menu{
     background-color: util.$secondaryColor;
@@ -39,6 +43,7 @@
             }
             &.has-dropdown{
                 position: relative;
+                z-index: 9999999999;
                 &::after{
                     content: "\2b";
                     font-family: 'Font Awesome 6 Free';
@@ -281,6 +286,7 @@
     box-shadow: util.$boxShadow;
     padding: 20px 30px;
     transition: .5s;
+    z-index: 999999;
      .content{
         .close-btn{
             font-size: 26px;

@@ -17,3 +17,43 @@ ul{
     padding-left: 0;
     margin-bottom: 0;
 }
+.theme-white-section-container{
+    width: 90%;
+    margin: auto;
+    background: colors.$white;
+}
+.theme-btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background: colors.$primaryColor;
+    padding: 18px 45px;
+    color: colors.$white;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+    perspective: 1px;
+    &::before{
+        content: "";
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: .5s;
+    }
+    &:hover{
+        &::before{
+            width: 100%;
+            left: 0;
+            
+        }
+    }
+    @media screen and (max-width:430px) {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+}
